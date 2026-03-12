@@ -45,7 +45,7 @@ export function analyzePatterns(interactions: Interaction[]): Pattern[] {
   const grouped = groupByObjection(interactions);
   const patterns: Pattern[] = [];
 
-  for (const [objectionKey, items] of grouped) {
+  for (const [, items] of grouped) {
     const wins = items.filter((i) => i.outcome === 'win').length;
     const responsePatterns = buildResponsePattern(items);
 
