@@ -1,0 +1,199 @@
+.patternCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  animation: fadeIn 0.35s ease both;
+  transition: border-color 0.2s;
+}
+
+.patternCard:hover { border-color: var(--border-strong); }
+
+.patternHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rankBadge {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--accent-gold);
+  opacity: 0.5;
+  flex-shrink: 0;
+  min-width: 28px;
+}
+
+.patternMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.objectionText {
+  font-style: italic;
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.patternStats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.statChip {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+}
+
+.expandIcon {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  padding: 2px;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+
+.expandIcon:hover { color: var(--accent-gold); }
+
+.patternBody {
+  border-top: 1px solid var(--border);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  animation: fadeIn 0.2s ease;
+}
+
+.bestResponse {
+  background: var(--accent-gold-dim);
+  border: 1px solid var(--accent-gold-border);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+
+.bestResponseLabel {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--accent-gold);
+  margin-bottom: 8px;
+}
+
+.bestResponseText {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-bottom: 12px;
+}
+
+.responseStats {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.winStat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--win);
+  font-weight: 600;
+}
+
+.lossStat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--loss);
+  font-weight: 600;
+}
+
+.followupStat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--followup);
+  font-weight: 600;
+}
+
+.winRateStat {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: auto;
+}
+
+.allResponses {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.allResponsesLabel {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  color: var(--text-muted);
+}
+
+.responseList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.responseRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 10px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+}
+
+.responseRowText {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  flex: 1;
+  min-width: 0;
+  color: var(--text-secondary);
+}
+
+.responseRank {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.responseRowStats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.responseWinRate { font-weight: 600; }
